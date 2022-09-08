@@ -1,0 +1,15 @@
+@use './utilities' as util;
+@use "sass:color";
+
+
+@each $key,
+$value in util.$cardBackground {
+    .card:nth-of-type(#{$key}) {
+        @include util.set-background($value);
+    }
+
+    .card:nth-of-type(#{$key})::after {
+        background: color.adjust($value, $blackness: 6%);
+    }
+
+}

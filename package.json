@@ -1,0 +1,9 @@
+{
+  "name": "scss card play",
+  "scripts": {
+    "start": "sass scss:css --watch"
+  },
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
+}
